@@ -1,4 +1,5 @@
 # example of multithreading
+# multithread runs under the same process
 
 import time
 import threading
