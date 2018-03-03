@@ -1,4 +1,4 @@
-# example of multiprocessing
+# example of multiprocessing (this is the example of the non shared memory between parent and child process)
 # creating separate processes for each task
 
 import time
@@ -6,14 +6,12 @@ import multiprocessing
 
 def square_num(num_array):
     for num in num_array:
-        time.sleep(0.2)
         print ("square of " + str(num) + " is : " + str(num*num))
     return
 
 
 def cube_num(num_array):
     for num in num_array:
-        time.sleep(0.2)
         print ("cube of " + str(num) + " is: " + str(num*num*num))
     return
 
